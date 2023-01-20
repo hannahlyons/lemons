@@ -343,3 +343,13 @@ body {
   opacity: 1;
   text-align: center;
 }
+.btn-warning{
+  background-color: rgba(242, 255, 58, 0.493);
+}
+
+.btn-transition{              
+  color: .15s ease-in-out; 
+  background-color: .15s ease-in-out; 
+  border-color: .15s ease-in-out; 
+  box-shadow: .15s ease-in-out;
+}
