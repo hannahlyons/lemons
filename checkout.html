@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A little Bit of Lemon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <a href="#" class="logo">logo</a>
         <div class="group">
@@ -28,22 +31,24 @@
         <div class="searchBox">
             <input type="text" placeholder="Search Here...">
         </div>
-    </header> 
+    </header>
     <h1>Hello, world!</h1>
     <footer>
         <div class="container">
-            <div class="row p-4">
-                <div class="col justify-content-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-6">
                     <h1>Squeeze the Day</h1>
                     <br>
                     <h6>Enjoy more lemon fun with a subscription</h6>
                     <br>
                     <form class="p-4">
                         <input type="Email" placeholder="Email..." required>
-                        <button type="submit"><ion-icon name="send-outline"></ion-icon></button>
+                        <button type="submit">
+                            <ion-icon name="send-outline"></ion-icon>
+                        </button>
                     </form>
                 </div>
-                <div class="col d-flex justify-content-center">
+                <div class="col-sm-6 p-4 d-flex justify-content-center">
                     <div class="face">
                         <div class="eyes">
                             <div class="eye"></div>
@@ -52,12 +57,43 @@
                     </div>
                 </div>
             </div>
+            <div class="row row-col-3 p-4">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="checkout.html" class="btn btn-outline-secondary">Leave a Review</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <ion-icon class="footericons" name="phone-portrait-outline"></ion-icon>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="aboutus.html" class="btn btn-outline-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 justify-content-evenly">
+                    <h4>Follow Our Socials</h4>
+                    <ion-icon class="Socials"  name="logo-instagram"></ion-icon>
+                    <ion-icon class="Socials" name="logo-facebook"></ion-icon>
+                    <ion-icon class="Socials" name="logo-linkedin"></ion-icon>
+                    <ion-icon class="Socials" name="logo-twitter"></ion-icon>
+                </div>
+            </div>
         </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
     <script>
         let searchBtn = document.querySelector('.searchBtn');
         let closeBtn = document.querySelector('.closeBtn');
@@ -65,34 +101,35 @@
         let navigation = document.querySelector('.navigation');
         let menuToggle = document.querySelector('.menutoggle');
         let header = document.querySelector('header');
-        searchBtn.onclick = function(){
+        searchBtn.onclick = function () {
             searchBox.classList.add('active');
             closeBtn.classList.add('active');
             searchBtn.classList.add('active');
         }
-        closeBtn.onclick = function(){
+        closeBtn.onclick = function () {
             searchBox.classList.remove('active');
             closeBtn.classList.remove('active');
             searchBtn.classList.remove('active');
         }
-        menuToggle.onclick = function(){
+        menuToggle.onclick = function () {
             header.classList.toggle('open');
         }
     </script>
     <script>
-         document.querySelector("footer").addEventListener("mousemove", eyeball);
+        document.querySelector("footer").addEventListener("mousemove", eyeball);
 
-function eyeball() {
-    'use strict';
-    var eye = document.querySelectorAll(".eye");
-    eye.forEach(function (eye) {
-        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
-        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-        let radian = Math.atan2(event.pageX - x, event.pageY - y);
-        let rot = (radian * (180 / Math.PI) * -1) + 270;
-        eye.style.transform  = "rotate("+ rot +"deg)"
-    })
-}
+        function eyeball() {
+            'use strict';
+            var eye = document.querySelectorAll(".eye");
+            eye.forEach(function (eye) {
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
+                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                eye.style.transform = "rotate(" + rot + "deg)"
+            })
+        }
     </script>
-  </body>
+</body>
+
 </html>
