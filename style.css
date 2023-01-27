@@ -147,7 +147,7 @@ header .search
     position: relative;
     display: none;
 }
-@media(max-width:800px)
+@media (max-width:800px)
 {
     .searchBtn
     {
@@ -181,8 +181,9 @@ header .search
         flex-direction: column;
         background: #fff;
         width: 100%;
-        height: calc(100vh - 8px);
+        height: calc(100vh - 80px);
         padding: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05); 
     }
 }
 /*Home Page*/
