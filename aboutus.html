@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <nav class="navbar">
         <a href="#" class="logo">A little Bit of Lemon</a>
         <div class="group">
             <ul class="navigation">
@@ -25,13 +25,13 @@
                     <ion-icon name="search-outline" class="searchBtn"></ion-icon>
                     <ion-icon name="close-outline" class="closeBtn"></ion-icon>
                 </span>
-                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
             </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
         </div>
         <div class="searchBox">
             <input type="text" placeholder="Search Here...">
         </div>
-    </header>
+    </nav>
     <section>
         <h1 class="LemonCheckoutPictureText">About Us</h1>
         <img class="LemonCheckoutPicture" src="AboutUsHeader.jpg" alt="">
@@ -205,7 +205,7 @@
         let searchBox = document.querySelector('.searchBox');
         let navigation = document.querySelector('.navigation');
         let menuToggle = document.querySelector('.menutoggle');
-        let header = document.querySelector('header');
+        let nav = document.querySelector('nav');
         searchBtn.onclick = function () {
             searchBox.classList.add('active');
             closeBtn.classList.add('active');
@@ -217,11 +217,11 @@
             searchBtn.classList.remove('active');
         }
         menuToggle.onclick = function () {
-            if (header.classList.contains("open")) {
-                header.classList.remove("open");
+            if (nav.classList.contains("open")) {
+                nav.classList.remove("open");
                 return;
             }
-            header.classList.add("open");
+            nav.classList.add("open");
             searchBox.classList.remove("active");
             closeBtn.classList.remove("active");
             searchBtn.classList.remove("active");

@@ -11,8 +11,7 @@
 </head>
 
 <body>
-    <section class="navbar">
-        <header>
+        <nav class="navbar">
             <a href="#" class="logo">A little Bit of Lemon</a>
             <div class="group">
                 <ul class="navigation">
@@ -26,15 +25,33 @@
                         <ion-icon name="search-outline" class="searchBtn"></ion-icon>
                         <ion-icon name="close-outline" class="closeBtn"></ion-icon>
                     </span>
-                    <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
                 </div>
+                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
             </div>
             <div class="searchBox">
                 <input type="text" placeholder="Search Here...">
             </div>
+        </nav>
+        <header>
+            <div class="header-content">
+                <h1>Lemons</h1>
+                <button type="button" class="btn btn-outline-light btn-lg">Products</button>
+                <button type="button" class="btn btn-outline-light btn-lg">About Us</button>
+            </div>
         </header>
-    </section>
-    <h1>Hi World</h1>
+        <div class="container text-center m-4">
+            <div class="row">
+              <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos velit ducimus, consectetur aliquid veritatis quisquam nisi at ullam officia nam magnam unde blanditiis, beatae praesentium assumenda cupiditate? Voluptas, enim?
+              </div>
+              <div class="col">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae perferendis, veritatis accusantium voluptatem rem necessitatibus blanditiis, ipsam enim quisquam obcaecati non voluptatum provident repellendus repellat eveniet ipsum eius voluptatibus adipisci.
+              </div>
+              <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati veniam, porro earum asperiores qui molestias aspernatur quas dolores optio dignissimos perferendis facere libero illum est maxime voluptatem itaque cum.
+              </div>
+            </div>
+          </div>
     <footer>
         <section>
             <div class="container"> 
@@ -72,7 +89,7 @@
         let searchBox = document.querySelector('.searchBox');
         let navigation = document.querySelector('.navigation');
         let menuToggle = document.querySelector('.menutoggle');
-        let header = document.querySelector('header');
+        let nav = document.querySelector('nav');
         searchBtn.onclick = function () {
             searchBox.classList.add('active');
             closeBtn.classList.add('active');
@@ -83,16 +100,9 @@
             closeBtn.classList.remove('active');
             searchBtn.classList.remove('active');
         }
-        menuToggle.onclick = function () {
-            if (header.classList.contains("open")) {
-                header.classList.remove("open");
-                return;
+        menuToggle.onclick = function(){
+            nav.classList.toggle('open');
             }
-            header.classList.add("open");
-            searchBox.classList.remove("active");
-            closeBtn.classList.remove("active");
-            searchBtn.classList.remove("active");
-        };
     </script>
     <script>
         document.querySelector("footer").addEventListener("mousemove", eyeball);
