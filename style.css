@@ -204,7 +204,6 @@ header
     color: whitesmoke;
     text-align: center;
 }
-.header-content h1
 .header-content h1 
 {
     font-size: 20vmin;
@@ -217,6 +216,17 @@ header
     padding: 8px 15px;
     color: whitesmoke;
 }
+.parallax
+ {
+    background-image: url("movingimage.png");
+  
+    min-height: 500px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 /*footer*/
 footer
 {
@@ -340,7 +350,7 @@ form button
 }
 
 /* about us page  */
-aboutusheader
+.aboutus
 {
     width: 100vw;
     height: 100vh;
@@ -350,7 +360,7 @@ aboutusheader
     align-items: flex-end;
     justify-content: center;
 }
-.aboutusheader-content
+.aboutus-content
 {
     margin-bottom: 250px;
     color: whitesmoke;

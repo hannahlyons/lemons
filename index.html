@@ -11,23 +11,23 @@
 </head>
 
 <body>
-        <nav class="navbar">
-            <a href="#" class="logo">A little Bit of Lemon</a>
-            <div class="group">
-                <ul class="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="checkout.html">Check-Out</a></li>
-                </ul>
-                <div class="search">
-                    <span class="icon">
-                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
-                        <ion-icon name="close-outline" class="closeBtn"></ion-icon>
-                    </span>
-                </div>
-                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+    <nav class="navbar">
+        <a href="#" class="logo">A little Bit of Lemon</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="checkout.html">Check-Out</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
             </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
         </div>
         <div class="searchBox">
             <input type="text" placeholder="Search Here...">
@@ -40,15 +40,40 @@
             <button type="button" class="btn btn-outline-light btn-lg">About Us</button>
         </div>
     </header>
-    <div class="container justify-content-center">
+    <div class="container d-flex justify-content-evenly">
         <div class="row">
             <div class="col-lg-3">
                 <p class="words">5 Star Company</p>
+                <svg class="staricons" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="grey"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg class="staricons" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="grey"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg class="staricons" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="grey"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="grey" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="grey" class="bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
             </div>
             <div class="col-lg-1">
                 <div class="line"></div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <p class="words">Collaboration with 50+ companies</p>
             </div>
             <div class="col-lg-1">
@@ -56,9 +81,16 @@
             </div>
             <div class="col-lg-3">
                 <p class="words">Helps the Lemon Community</p>
+                <button type="button" class="btn btn-outline-secondary"><a href="aboutus.html">About Us</a></button>
             </div>
         </div>
     </div>
+    <section>
+        <div class="parallax"></div>
+        <div>
+         <h1>Reasons Why</h1>   
+        </div>
+    </section>
     <footer>
         <section>
             <div class="container">
@@ -117,9 +149,9 @@
             closeBtn.classList.remove("active");
             searchBtn.classList.remove("active");
         };
-        menuToggle.onclick = function(){
+        menuToggle.onclick = function () {
             nav.classList.toggle('open');
-            }
+        }
     </script>
     <script>
         document.querySelector("footer").addEventListener("mousemove", eyeball);
