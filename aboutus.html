@@ -25,8 +25,8 @@
                     <ion-icon name="search-outline" class="searchBtn"></ion-icon>
                     <ion-icon name="close-outline" class="closeBtn"></ion-icon>
                 </span>
-                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
             </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
         </div>
         <div class="searchBox">
             <input type="text" placeholder="Search Here...">
@@ -35,6 +35,12 @@
     <aboutusheader>
         <h1>About Us</h1>
     </aboutusheader>
+    <section>
+        <h1 class="LemonCheckoutPictureText">About Us</h1>
+        <img class="LemonCheckoutPicture" src="AboutUsHeader.jpg" alt="">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255, 222, 75, 0.288)" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,224C384,192,480,96,576,74.7C672,53,768,107,864,149.3C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <h1>Hello, world!</h1>
     <div class="container-fluid">
     <div class="timeline">
         <div class="containera left-container">
@@ -202,7 +208,7 @@
         let searchBox = document.querySelector('.searchBox');
         let navigation = document.querySelector('.navigation');
         let menuToggle = document.querySelector('.menutoggle');
-        let header = document.querySelector('header');
+        let nav = document.querySelector('nav');
         searchBtn.onclick = function () {
             searchBox.classList.add('active');
             closeBtn.classList.add('active');
@@ -214,11 +220,11 @@
             searchBtn.classList.remove('active');
         }
         menuToggle.onclick = function () {
-            if (header.classList.contains("open")) {
-                header.classList.remove("open");
+            if (nav.classList.contains("open")) {
+                nav.classList.remove("open");
                 return;
             }
-            header.classList.add("open");
+            nav.classList.add("open");
             searchBox.classList.remove("active");
             closeBtn.classList.remove("active");
             searchBtn.classList.remove("active");
