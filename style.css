@@ -227,6 +227,25 @@ header
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .parallaxtext
+  {
+    font-size: 10vmin;
+    color: whitesmoke;
+    margin-top: 50px;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+  }
+  .testimonypic
+  {
+    width: 600px;
+    height: 700px;
+  }
+  .card
+  {
+    top: 200px;
+    background-color: #7B7979;
+  }
 /*footer*/
 footer
 {
@@ -532,15 +551,21 @@ body{
 
 /*Home Page*/
 .line{
-    border-left: 15px solid rgba(75, 75, 75, 0.274);
-    height: 180px;
-    margin-top: 10px;
+    border-left: 15px solid rgba(75, 75, 75, 0.37);
+    height: 240px;
+    margin-top: 30px;
     margin-bottom: 10px;
     border-radius: 4px;
 }
 .words{
-    margin-top: 10px;
-    color: black;
+    margin-top: 80px;
+    color: rgb(54, 54, 54);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px
+    font-size: 40px;
+}
+.indexrow{
+    height: 250px;
+}
+.staricons{
+    filter:drop-shadow(7px 7px 8px rgba(75, 75, 75))
 }
